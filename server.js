@@ -20,7 +20,7 @@ client.on('message', (message) => {
       message.member.voiceChannel.join().then(function(connection){
         const dispatcher = connection.play(fs.createReadStream("bakedpotate.webm"), {type: "webm/opus"});
         dispatcher.on('finish', () => {
-	        connection.disconnect();
+	  connection.disconnect();
           message.channel.send("That was fun. I wonder if the baked potato died.");
         });
       });

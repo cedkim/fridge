@@ -1,0 +1,16 @@
+{
+  "name": "fridgebot",
+  "version": "0.1.0",
+  "description": "I am losing my sanity.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "discord.js": "^11.3.0"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}

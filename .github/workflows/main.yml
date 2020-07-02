@@ -12,9 +12,6 @@ jobs:
         - name: Eat a hot air balloon
           run: |
             curl -L https://fly.io/install.sh | sh
-        - name: Tape wings to a safe and yeet
-          run: |
-            /home/runner/.fly/bin/flyctl secrets set THE_KEY_TO_THE_LOCKED_FRIDGE="$THE_KEY_TO_THE_LOCKED_FRIDGE"
         - name: Catapult fridge and injure man on the moon
           run: |
             /home/runner/.fly/bin/flyctl deploy

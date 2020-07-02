@@ -1,0 +1,17 @@
+name: Catapult refrigerator to moon
+on: [push]
+env:
+  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+  DA_WAE: ${{ secrets.THE_KEY_TO_THE_LOCKED_FRIDGE }}
+jobs:
+  yeet:
+      name: Yeet
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - uses: superfly/flyctl-actions@1.0
+          with:
+            args: "secrets set THE_KEY_TO_THE_LOCKED_FRIDGE=$DA_WAE"
+        - uses: superfly/flyctl-actions@1.0
+          with:
+            args: "deploy"

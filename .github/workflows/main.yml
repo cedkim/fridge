@@ -9,9 +9,12 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-        - uses: superfly/flyctl-actions@1.0
-          with:
-            args: "secrets set THE_KEY_TO_THE_LOCKED_FRIDGE=$DA_WAE"
-        - uses: superfly/flyctl-actions@1.0
-          with:
-            args: "deploy"
+        - name: Eat a hot air balloon
+          run: |
+            curl -L https://fly.io/install.sh | sh
+        - name: Tape wings to a safe and yeet
+          run: |
+            flyctl secrets set THE_KEY_TO_THE_LOCKED_FRIDGE="$THE_KEY_TO_THE_LOCKED_FRIDGE"
+        - name: Catapult fridge and injure man on the moon
+          run: |
+            flyctl deploy

@@ -1,6 +1,6 @@
 {
   "name": "fridgebot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "I am losing my sanity.",
   "main": "server.js",
   "scripts": {

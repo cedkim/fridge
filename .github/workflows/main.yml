@@ -19,6 +19,7 @@ jobs:
           MESSAGE
   yeet:
       name: Yeet
+      needs: check_skip
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2

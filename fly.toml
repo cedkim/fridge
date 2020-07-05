@@ -1,3 +1,5 @@
+app = "fridge"
+
 [[services]]
   concurrency = "20,25"
   internal_port = 3000

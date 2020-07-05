@@ -1,22 +1,16 @@
-app = "fridge"
-
-
 [[services]]
+  concurrency = "20,25"
   internal_port = 3000
   protocol = "tcp"
 
-  [services.concurrency]
-    hard_limit = 25
-    soft_limit = 20
+  [services.port]
 
-  [[services.ports]]
-    handlers = ["http"]
-    port = "80"
+    [services.port.443]
+      handlers = ["tls","http"]
 
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = "443"
+    [services.port.80]
+      handlers = ["http"]
 
-  [[services.tcp_checks]]
+  [[services.tcp_check]]
     interval = 10000
     timeout = 2000

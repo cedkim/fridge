@@ -38,7 +38,7 @@ client.on('message', (message) => {
   }else if(message.content === "i want some milk"){
     message.channel.send("M I L K", {files: ["https://i.ibb.co/4MgvtTP/Fresh-milk-on-wooden-table-in-morning-light-and-nature-background.jpg"]});
   }else if(message.content === "put a banana in the fridge"){
-    message.channel.send("Why would you? Bananas actually go bed faster in the fridge. A simple explanation is that bananas grow in warm areas, so putting them in a cooler area makes them go bad faster. Lol.");
+    message.channel.send("Why would you? Bananas actually go bad faster in the fridge. A simple explanation is that bananas grow in warm areas, so putting them in a cooler area makes them go bad faster. Lol.");
   }
 });
 

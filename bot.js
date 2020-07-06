@@ -40,8 +40,8 @@ client.on('message', (message) => {
   }else if(message.content === "put a banana in the fridge"){
     message.channel.send("Why would you? Bananas actually go bad faster in the fridge. A simple explanation is that bananas grow in warm areas, so putting them in a cooler area makes them go bad faster. Lol.");
   }else if(message.content === "buy fridge+"){
-		message.channel.send({embed: {"title":"💸 Buy Fridge+/Ghost Fridge","description":"Thanks for choosing to financially support Fridgebot! There are two premium subscriptions: Fridge+ if you want to personalize Fridgebot, and Ghost Fridge if you want a completely custom bot, hosted on the Fridgebot infrastructure.","fields":[{"name":"Payment","value":"Fridge+ costs 2$ a month\nGhost Fridge costs 3$ a month\n[💳 Continue with a credit card](https://gumroad.com/l/fridgeplus)"}],"footer":{"text":"✔️ Your payment will be securely processed by Gumroad"},"image":{"url":"https://i.ibb.co/2jrzh2P/Fridge-Illustration.png"}});
-	}
+    message.channel.send({embed: {"title":"💸 Buy Fridge+/Ghost Fridge","description":"Thanks for choosing to financially support Fridgebot! There are two premium subscriptions: Fridge+ if you want to personalize Fridgebot, and Ghost Fridge if you want a completely custom bot, hosted on the Fridgebot infrastructure.","fields":[{"name":"Subscribe","value":"Fridge+ costs 2$ a month\nGhost Fridge costs 3$ a month\n[👉 Learn more](https://gumroad.com/l/fridgeplus)"}],"footer":{"text":"✔️ Your payment will be securely processed by Gumroad"},"image":{"url":"https://i.ibb.co/2jrzh2P/Fridge-Illustration.png"}});
+  }
 });
 
 client.login(process.env.THE_KEY_TO_THE_LOCKED_FRIDGE);
